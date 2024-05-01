@@ -15,16 +15,16 @@ $(window)
  })
  .resize();
 
-const allVideos = document.querySelectorAll(".video");
+const allblogs = document.querySelectorAll(".blog");
 
-allVideos.forEach((v) => {
+allblogs.forEach((v) => {
  v.addEventListener("mouseover", () => {
-  const video = v.querySelector("video");
-  video.play();
+  const blog = v.querySelector("blog");
+  blog.play();
  });
  v.addEventListener("mouseleave", () => {
-  const video = v.querySelector("video");
-  video.pause();
+  const blog = v.querySelector("blog");
+  blog.pause();
  });
 });
 
@@ -33,7 +33,7 @@ allVideos.forEach((v) => {
 //   $(".main-container").removeClass("show");
 //   $(".main-container").scrollTop(0);
 //  });
-//  $(".trending, .video").on("click", function (e) {
+//  $(".trending, .blog").on("click", function (e) {
 //   $(".main-container").addClass("show");
 //   $(".main-container").scrollTop(0);
 //   $(".sidebar-link").removeClass("is-active");
